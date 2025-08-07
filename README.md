@@ -1,5 +1,7 @@
 # Instagram Follower Checker
 
+Desarrollado por: https://github.com/CamperoJose/
+
 Una extensión de Chrome que analiza tu perfil de Instagram para mostrar información detallada sobre tus seguidores y seguidos.
 
 ## Funcionalidades
