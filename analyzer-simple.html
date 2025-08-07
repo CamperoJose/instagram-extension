@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Profile Analyzer - Simple</title>
+  <link rel="stylesheet" href="analyzer-styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-content">
+        <h1>📊 Instagram Profile Analyzer</h1>
+        <p class="subtitle">Analiza tu perfil de Instagram de forma completa</p>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="control-panel">
+        <div class="status-indicator">
+          <span id="statusText">Esperando acción...</span>
+        </div>
+        <div class="button-group">
+          <button id="checkButton" class="primary-button">
+            <span class="button-icon">🔍</span>
+            Cargar datos de mi perfil
+          </button>
+          <button id="stopButton" class="secondary-button" style="display:none;">
+            <span class="button-icon">⏹️</span>
+            Detener análisis
+          </button>
+          <button id="refreshButton" class="secondary-button">
+            <span class="button-icon">🔄</span>
+            Refrescar conexión
+          </button>
+        </div>
+        <div class="instructions">
+          <p>💡 <strong>Instrucciones:</strong></p>
+          <ol>
+            <li>Asegúrate de tener una pestaña de Instagram abierta</li>
+            <li>Si no se detecta Instagram, haz clic en "Refrescar conexión"</li>
+            <li>Haz clic en "Cargar datos de mi perfil"</li>
+            <li>Espera a que se complete el análisis</li>
+            <li>Explora los resultados en las secciones de abajo</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="results" class="results-container">
+        <div class="initial-message">
+          <div class="welcome-card">
+            <h2>👋 ¡Bienvenido al Instagram Profile Analyzer!</h2>
+            <p>Esta herramienta te ayudará a analizar tu perfil de Instagram de forma completa.</p>
+            <div class="features-list">
+              <div class="feature-item">
+                <span class="feature-icon">📊</span>
+                <span>Resumen completo de seguidores y seguidos</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🔍</span>
+                <span>Identifica quién no te sigue de vuelta</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">👤</span>
+                <span>Cards detalladas con fotos de perfil</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🔗</span>
+                <span>Enlaces directos a perfiles</span>
+              </div>
+            </div>
+            <p class="start-hint">Haz clic en "Cargar datos de mi perfil" para comenzar</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>Instagram Profile Analyzer v1.3 - Desarrollado para análisis de perfiles</p>
+    </footer>
+  </div>
+
+  <script src="analyzer-simple.js"></script>
+</body>
+</html> 

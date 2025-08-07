@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Follower Checker",
+  "version": "1.5",
+  "description": "Analiza cualquier perfil de Instagram mostrando seguidores, seguidos y quién no te sigue de vuelta.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "action": {
+    "default_title": "Instagram Profile Analyzer :)",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
